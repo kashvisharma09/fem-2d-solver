@@ -1,6 +1,8 @@
 """Cantilever beam under a tip load: solve with FEM, validate against theory,
 and save plots to results/cantilever/."""
+import sys
 import pathlib
+sys.path.insert(0, str(pathlib.Path(__file__).resolve().parents[1]))
 
 import matplotlib.pyplot as plt
 import numpy as np
